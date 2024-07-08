@@ -55,6 +55,22 @@ The database consists of four main tables: `employees`, `service_identities`, `p
 - **ServiceIdentity** ↔ **Task**: One-to-Many
 - **Task** ↔ **Task**: One-to-Many (self-referential for subtasks)
 
+### Environment Configuration
+
+The application uses a `.env` file for configuration. You need to create this file in the root directory of the project and add the following variables:
+
+```
+DATABASE_USERNAME=your_database_username
+DATABASE_PASSWORD=your_database_password
+DATABASE_IP=your_database_ip
+DATABASE_PORT=your_database_port
+DATABASE_NAME=your_database_name
+YOUGILE_API_KEY=your_yougile_api_key
+```
+
+Replace the placeholders with your actual database credentials and YouGile API key.
+
+
 ## Setup Instructions
 
 ### Prerequisites
